@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../App.css";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { Button } from "react-bootstrap";
-import FacebookLogin from "react-facebook-login";
+// import FacebookLogin from "react-facebook-login";
 import { server_api } from "../api/api";
 function Login({ sWord, userLogin }) {
   const [username, setUsername] = useState("");

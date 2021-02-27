@@ -2,7 +2,6 @@ import React from "react";
 import SkyLight from "react-skylight";
 import { connect } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
-import { Button, label } from "react-bootstrap";
 import normal from "../icon/normal.png";
 import like from "../icon/like.png";
 import bin1 from "../icon/bin1.png";
