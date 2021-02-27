@@ -1,38 +1,183 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+.App{
+  height: 100vh;
+  width: 98.9vw;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  color: rgb(11, 17, 17);
+}
+
+.Navbar{
+  color: aliceblue;
+  padding: 10px;
+  top:0;
+  background: #343a40;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  z-index: 2;
+}
+
+.Input,.Post{
+  background: #59636D;
+  margin: 20px auto;
+  text-align: center;
+  width: 60%;
+  text-align: left;
+}
+.container {
+  row-gap: 2 auto;
+}
+.Form{
+  background: #59636D;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  min-height: 580px;
+}
+.head{
+  background: #343a40;
+  margin: 10px auto;
+  text-align: center;
+  width: 83.4%;
+  padding:20px
+
+}
+.Chat__display{
+  flex-direction: row;
+
+
+}
+.Chat__box{
+  max-width: 65%;
+  border-radius: 20px;
+  margin-top: 5px;
+  padding: 0px 15px 0px 15px;
+  text-align: left;
+}
+.ChatRoom{
+  background: #343a40;
+  margin: 10px auto;
+  text-align: center;
+  width: 83.4%;
+
+}
+
+.Input__field{
+  background: white;
+  width: 50%;
+  height: 30px;
+  font-size: 15px;
+  border: none ;
+  margin: 10px;
+
+}
+.Input{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Input__header{
+  background:#335e6b;
+  height: 30px;
+  margin-top:-10px;
+  color:white;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Post{
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+.Post__image{
+  z-index: 1;
+  left: 39%;
+  margin-left: -199px;
+  margin-top: -10px;
+  position: absolute;
+  width:100%;
+  height: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Post__delete{
+  border: none;
+  background: none;
+  float: right;
+  cursor: pointer;
+  z-index: 2;
+  
+
+}
+
+.Sidebar{
+  top:0;
+  left:0;
+  height: 665px;
+  width: 250px;
+  background-color: #343a40;
+  position: fixed;
+  margin-top: 60px;
+}
+
+.Button{
+  background-color: grey;
+  border: none;
   color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.login{
+  float: right;;
+}
+.MODAL_IN{
+  margin:10px 60px;
+  width: 60%;
+  height: 60%;
+  
+}
+.MODAL__BOX{
+  left: 50%;
+  margin-left: -160px;
+  margin-top: 30px;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+}
+.login_form{
+  background: #343a40;
+  margin: 10px auto;
+  text-align: center;
+  width: 83.4%;
+  height: 91.5%;
+  
+}
+.login_label{
+  margin: 20px;
+  width: 60%;
+}
+.login_text{
+  margin-left: 20px;
+}
+.Advertise_head{
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+.Advertise{
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
