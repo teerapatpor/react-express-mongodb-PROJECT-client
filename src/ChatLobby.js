@@ -10,6 +10,7 @@ import { connect } from "react-redux";
 function ChatLobby(props) {
   useEffect(() => {
     props.updateChatList();
+    localStorage.setItem("latest-chat", "");
   }, []);
   const history = useHistory();
 

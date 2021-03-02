@@ -31,6 +31,7 @@ function Login({ sWord, userLogin }) {
         );
 
         localStorage.setItem("token", res.data.data.token);
+        localStorage.setItem("userID", res.data.data.resultLogin._id);
         alert("เข้าสู่ระบบสำเร็จ");
         history.push("/");
       } else {

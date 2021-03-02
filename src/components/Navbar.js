@@ -62,6 +62,7 @@ function Navbar(props) {
           className="login"
           onClick={() => {
             localStorage.removeItem("token");
+            localStorage.removeItem("userID");
             props.userLogout(props.user.socketID);
             alert("ออกจากระบบแล้ว");
             history.push("/");

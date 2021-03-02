@@ -46,7 +46,6 @@ export const userMapDispatchtoProps = (dispatch) => {
       socket.emit("fetch_chat", "chat");
       socket.on("chat_list", async (data) => {
         delete data[store.getState().user.socketID];
-        console.log("data", data);
         await dispatch({
           type: "chatListUpdate",
           payload: data,
