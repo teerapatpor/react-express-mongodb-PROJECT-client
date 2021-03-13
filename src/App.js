@@ -8,6 +8,7 @@ import login from "./login";
 import register from "./register";
 import ChatLobby from "./ChatLobby";
 import Chatroom from "./Chatroom";
+import Editprofile from "./Editprofile";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import socketIOClient from "socket.io-client";
 import { server_api } from "./api/api";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/สมัครสมาชิก" component={register} />
           <Route path="/สนทนา" component={ChatLobby} />
           <Route path="/ห้องสนทนา" component={Chatroom} />
+          <Route path="/แก้ไขข้อมูลส่วนตัว" component={Editprofile} />
         </Switch>
       </Router>
     </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Button } from "react-bootstrap";
+import { Button, Dropdown, DropdownButton } from "react-bootstrap";
 import axios from "axios";
 import {
   userMapStatetoProps,
@@ -27,6 +27,9 @@ function Navbar(props) {
             true,
             res.data.data._id,
             res.data.data.username,
+            res.data.data.firstname,
+            res.data.data.lastname,
+            res.data.data.avatar,
             res.data.data.role,
             res.data.data.chatRecieverID,
             token
@@ -49,7 +52,7 @@ function Navbar(props) {
       >
         ownerProject
       </label>
-      <label style={{ float: "right" }}>{props.user.username}</label>
+
       {!props.user.login ? (
         <Link to={"/ลงชื่อเข้าใช้"}>
           <Button variant="outline-info" className="login">
@@ -57,19 +60,31 @@ function Navbar(props) {
           </Button>
         </Link>
       ) : (
-        <Button
-          variant="outline-info"
-          className="login"
-          onClick={() => {
-            localStorage.removeItem("token");
-            localStorage.removeItem("userID");
-            props.userLogout(props.user.socketID);
-            alert("ออกจากระบบแล้ว");
-            history.push("/");
-          }}
-        >
-          ออกจากระบบ
-        </Button>
+        <>
+          <Button
+            variant="outline-info"
+            style={{ float: "right" }}
+            onClick={() => {
+              localStorage.removeItem("token");
+              localStorage.removeItem("userID");
+              props.userLogout(props.user.socketID);
+              alert("ออกจากระบบแล้ว");
+              history.push("/");
+            }}
+          >
+            ออกจากระบบ
+          </Button>
+          <DropdownButton
+            id="dropdown-basic-button"
+            variant="outline-primary"
+            title="Setting"
+            style={{ float: "right", marginRight: "20px" }}
+          >
+            <Dropdown.Item href="แก้ไขข้อมูลส่วนตัว">
+              edit Profile
+            </Dropdown.Item>
+          </DropdownButton>
+        </>
       )}
     </header>
   );

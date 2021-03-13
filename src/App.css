@@ -1,21 +1,21 @@
-*{
+* {
   box-sizing: border-box;
 }
-.App{
+.App {
   height: 100vh;
   width: 98.9vw;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   background: rgb(255, 255, 255);
   color: rgb(11, 17, 17);
 }
 
-.Navbar{
+.Navbar {
   color: aliceblue;
   padding: 10px;
-  top:0;
+  top: 0;
   background: #343a40;
   width: 100%;
   height: 58px;
@@ -23,8 +23,9 @@ body{
   z-index: 2;
 }
 
-.Input,.Post{
-  background: #59636D;
+.Input,
+.Post {
+  background: #59636d;
   margin: 20px auto;
   text-align: center;
   width: 60%;
@@ -33,62 +34,60 @@ body{
 .container {
   row-gap: 2 auto;
 }
-.Form{
-  background: #59636D;
+.Form {
+  background: #59636d;
   margin: 10px auto;
   text-align: center;
   width: 100%;
   min-height: 580px;
 }
-.head{
+.head {
   background: #343a40;
   margin: 10px auto;
   text-align: center;
   width: 83.4%;
-  padding:20px
-
+  padding: 20px;
 }
-.Chat__display{
+.Chat__display {
   flex-direction: row;
-
-
 }
-.Chat__box{
+.Chat__box {
   max-width: 65%;
   border-radius: 20px;
   margin-top: 5px;
   padding: 0px 15px 0px 15px;
   text-align: left;
 }
-.ChatRoom{
+.ChatRoom {
   background: #343a40;
   margin: 10px auto;
   text-align: center;
   width: 83.4%;
-
 }
-
-.Input__field{
+.chatItem {
+  width: 40%;
+  height: 95px;
+}
+.Input__field {
   background: white;
   width: 50%;
   height: 30px;
   font-size: 15px;
-  border: none ;
+  border: none;
   margin: 10px;
-
 }
-.Input{
+.Input {
   text-align: center;
 }
-.Input__header{
-  background:#335e6b;
+.Input__header {
+  background: #335e6b;
   height: 30px;
-  margin-top:-10px;
-  color:white;
+  margin-top: -10px;
+  color: white;
   font-size: 20px;
 }
 
-.Post{
+.Post {
   border: 1px solid black;
   padding: 10px;
   width: 300px;
@@ -96,29 +95,27 @@ body{
   position: relative;
   height: 100px;
 }
-.Post__image{
+.Post__image {
   z-index: 1;
   left: 39%;
   margin-left: -199px;
   margin-top: -10px;
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 90%;
 }
 
-.Post__delete{
+.Post__delete {
   border: none;
   background: none;
   float: right;
   cursor: pointer;
   z-index: 2;
-  
-
 }
 
-.Sidebar{
-  top:0;
-  left:0;
+.Sidebar {
+  top: 0;
+  left: 0;
   height: 665px;
   width: 250px;
   background-color: #343a40;
@@ -126,7 +123,7 @@ body{
   margin-top: 60px;
 }
 
-.Button{
+.Button {
   background-color: grey;
   border: none;
   color: white;
@@ -137,16 +134,15 @@ body{
   font-size: 16px;
 }
 
-.login{
-  float: right;;
+.login {
+  float: right;
 }
-.MODAL_IN{
-  margin:10px 60px;
+.MODAL_IN {
+  margin: 10px 60px;
   width: 60%;
   height: 60%;
-  
 }
-.MODAL__BOX{
+.MODAL__BOX {
   left: 50%;
   margin-left: -160px;
   margin-top: 30px;
@@ -154,30 +150,27 @@ body{
   width: 80%;
   height: 80%;
 }
-.login_form{
+.login_form {
   background: #343a40;
   margin: 10px auto;
   text-align: center;
   width: 83.4%;
   height: 91.5%;
-  
 }
-.login_label{
+.login_label {
   margin: 20px;
   width: 60%;
 }
-.login_text{
+.login_text {
   margin-left: 20px;
 }
-.Advertise_head{
+.Advertise_head {
   background: rgb(255, 255, 255);
   margin: 0 auto;
   text-align: center;
   width: 60%;
 }
-.Advertise{
+.Advertise {
   width: 100%;
   height: 100%;
 }
-
-
