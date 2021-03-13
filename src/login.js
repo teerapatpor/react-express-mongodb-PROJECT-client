@@ -7,8 +7,27 @@ import {
 } from "./states/userState";
 
 function login(props) {
-  function userLogin(_id, username, role, chatRecieverID, token) {
-    props.userLogin(true, _id, username, role, chatRecieverID, token);
+  function userLogin(
+    _id,
+    username,
+    firstname,
+    lastname,
+    avatar,
+    role,
+    chatRecieverID,
+    token
+  ) {
+    props.userLogin(
+      true,
+      _id,
+      username,
+      firstname,
+      lastname,
+      avatar,
+      role,
+      chatRecieverID,
+      token
+    );
     props.updateChatList();
   }
   return (

@@ -10,7 +10,17 @@ export const userMapStatetoProps = (state) => {
 };
 export const userMapDispatchtoProps = (dispatch) => {
   return {
-    userLogin: (login, _id, username, role, chatRecieverID, token) => {
+    userLogin: (
+      login,
+      _id,
+      username,
+      firstname,
+      lastname,
+      avatar,
+      role,
+      chatRecieverID,
+      token
+    ) => {
       socket.emit("user_login", {
         id: _id,
         username: username,
@@ -22,6 +32,9 @@ export const userMapDispatchtoProps = (dispatch) => {
             login,
             _id,
             username,
+            firstname,
+            lastname,
+            avatar,
             role,
             chatRecieverID,
             token,
