@@ -80,7 +80,11 @@ function Navbar(props) {
             title="Setting"
             style={{ float: "right", marginRight: "20px" }}
           >
-            <Dropdown.Item href="/แก้ไขข้อมูลส่วนตัว">
+            <Dropdown.Item
+              onClick={() => {
+                history.push("แก้ไขข้อมูลส่วนตัว");
+              }}
+            >
               edit Profile
             </Dropdown.Item>
           </DropdownButton>
