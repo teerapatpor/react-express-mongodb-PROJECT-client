@@ -108,7 +108,6 @@ function Home(props) {
     <div
       className="head"
       style={{
-        position: "absolute",
         top: 0,
         right: 0,
         top: 50,
