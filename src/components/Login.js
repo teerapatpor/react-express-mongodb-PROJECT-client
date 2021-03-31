@@ -63,9 +63,9 @@ function Login({ sWord, userLogin }) {
   }
 
   return (
-    <header
-      className="login_form"
-      style={{ position: "absolute", top: 0, right: 0, top: 50 }}
+    <div
+      className="head"
+      style={{ top: 0, right: 0, top: 50 }}
       onKeyDown={(e) => {
         if (e.code === "Enter") {
           auth();
@@ -74,10 +74,12 @@ function Login({ sWord, userLogin }) {
     >
       <div
         style={{
-          width: "700px",
-          height: "250px",
+          width: "70%",
+          height: "auto",
           background: "white",
-          margin: "10px auto 0px",
+          margin: "10px auto ",
+          overflow: "hidden",
+          fontSize: `${window.innerWidth / 40}px`,
         }}
       >
         <label className="login_label">
@@ -100,7 +102,16 @@ function Login({ sWord, userLogin }) {
         </label>
         {sWord === "login" ? (
           <div>
-            <Button variant="secondary" style={{ right: 0 }} onClick={auth}>
+            <Button
+              variant="secondary"
+              style={{
+                right: 0,
+                width: "20%",
+                minWidth: "80px",
+                fontSize: `${window.innerWidth / 60}px`,
+              }}
+              onClick={auth}
+            >
               เข้าสู่ระบบ
             </Button>
             <br />
@@ -112,16 +123,25 @@ function Login({ sWord, userLogin }) {
           </div>
         ) : (
           <div>
-            <Button style={{ right: 0 }} variant="secondary" onClick={auth}>
+            <Button
+              style={{
+                right: 0,
+                width: "20%",
+                minWidth: "80px",
+                fontSize: `${window.innerWidth / 60}px`,
+              }}
+              variant="secondary"
+              onClick={auth}
+            >
               สมัครสมาชิก
             </Button>
           </div>
         )}
       </div>
-      <label className="bg-danger text-white mt-0" style={{ width: "700px" }}>
+      <label className="bg-danger text-white mt-0" style={{ width: "70%" }}>
         {errMsg}
       </label>
-    </header>
+    </div>
   );
 }
 

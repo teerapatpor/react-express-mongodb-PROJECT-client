@@ -30,13 +30,13 @@ function ChatLobby(props) {
         top: 0,
         right: 1,
         top: 50,
-        height: "91.5%",
       }}
     >
       <div
         style={{
           background: "white",
           width: "80%",
+          height: "auto",
           minHeight: "500px",
           margin: "30px auto",
         }}
